@@ -21,6 +21,12 @@
 	.clr{
 		color: aliceblue;
 	}
+	.responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 </style>
 
 <body>
@@ -49,7 +55,7 @@
 
 					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
 					
-						<li><a class="nav-link" href="cart.html"><i class="fa-brands fa-instagram fa-2xl" style="color: white;"></i></a></li>
+						<li><a class="nav-link" href="https://www.instagram.com/the_hotwheels_stop?igsh=enRhb2l0dDJmcHdm"><i class="fa-brands fa-instagram fa-2xl" style="color: white;"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -69,7 +75,15 @@
 						</div>
 						<div class="col-lg-7">
 							<div class="hero-img-wrap">
-								<img src="img/banner/banner-img2.png" class="img-fluid">
+								<picture>
+									<source media="(max-width: 360px)" srcset="img/banner/mobile-small.jpg">
+									<source media="(max-width: 480px)" srcset="img/banner/mobile-large.jpg">
+									<source media="(max-width: 768px)" srcset="img/banner/tablet.jpg">
+									<source media="(max-width: 1024px)" srcset="img/banner/laptop.jpg">
+									<img src="img/banner/desktop.jpg" alt="Responsive Car Image" class="responsive-image" />
+								  </picture>
+								  
+								  
 							</div>
 						</div>
 					</div>
